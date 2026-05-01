@@ -10,158 +10,168 @@
             line-height: 1.8;
             margin: 0;
             padding: 0;
-            background-color: #fcf8fd;
-            color: #3e2a3e;
+            background-color: #fdfaf6;
+            color: #333;
         }
         header {
-            background: linear-gradient(135deg, #6c3483, #d291bc);
+            background-color: #5d5c58;
             color: white;
-            padding: 60px 20px 100px 20px;
+            padding: 80px 20px 140px 20px; /* Increased bottom padding to make room for photo */
             text-align: center;
         }
         .container {
-            max-width: 800px;
-            margin: -80px auto 40px;
+            max-width: 850px;
+            margin: -80px auto 40px; /* Adjusted margin to sit properly behind the photo */
             padding: 40px;
             background: white;
-            box-shadow: 0 10px 30px rgba(108, 52, 131, 0.1);
-            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+            border-radius: 8px;
             position: relative;
         }
         .profile-container {
             text-align: center;
-            margin-top: -140px;
-            margin-bottom: 25px;
+            margin-top: -180px; /* Moves the photo up into the header area */
+            margin-bottom: 20px;
         }
         .profile-image {
-            width: 240px;
-            height: 240px;
+            width: 260px;
+            height: 260px;
             object-fit: cover;
             border-radius: 50%;
-            border: 8px solid white;
-            box-shadow: 0 5px 20px rgba(0,0,0,0.15);
-            background-color: #eee;
+            border: 10px solid white;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+            background-color: #fff;
         }
-        .gratitude-text {
-            text-align: center;
-            font-style: italic;
-            color: #6c3483;
-            max-width: 650px;
-            margin: 0 auto 30px auto;
-            font-size: 1.05em;
+        .date-subtitle {
+            font-size: 1.2em;
+            margin-top: 10px;
+            opacity: 0.9;
         }
+        h1 { font-size: 2.5em; margin-bottom: 5px; }
         .section-title {
-            color: #6c3483;
-            border-bottom: 2px solid #f2e6f2;
-            padding-bottom: 8px;
+            color: #5d5c58;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 10px;
             margin-top: 40px;
             text-align: center;
             text-transform: uppercase;
-            letter-spacing: 1.5px;
+            letter-spacing: 2px;
         }
-        .church-nurse-tag {
-            display: flex;
-            justify-content: center;
-            gap: 10px;
-            margin-bottom: 20px;
-            flex-wrap: wrap;
+        .poem-box {
+            background-color: #f9f9f9;
+            border-top: 1px solid #eee;
+            border-bottom: 1px solid #eee;
+            padding: 30px;
+            margin: 40px 0;
+            font-style: italic;
+            white-space: pre-line;
+            text-align: center;
+            color: #555;
         }
-        .tag {
-            background-color: #f2e6f2;
-            color: #6c3483;
-            padding: 5px 15px;
-            border-radius: 20px;
-            font-size: 0.85em;
-            font-weight: bold;
-            border: 1px solid #d291bc;
-        }
-        .visitation-card {
-            background-color: #f9f4fb;
-            border-radius: 10px;
-            padding: 25px;
+        .visitation-box {
+            background-color: #f4f1ec;
+            padding: 30px;
             margin: 30px 0;
             text-align: center;
-            border: 1px solid #e8d5e8;
+            border-radius: 8px;
+            border: 1px solid #e0dcd5;
         }
-        .donation-section {
-            background: linear-gradient(to bottom, #ffffff, #fdf8ff);
-            border: 2px solid #d291bc;
-            border-radius: 15px;
-            padding: 40px;
-            text-align: center;
+        .donation-box {
+            background-color: #fdfaf6;
+            border: 2px dashed #5d5c58;
+            padding: 30px;
             margin-top: 50px;
+            text-align: center;
+            border-radius: 8px;
         }
         .btn {
             display: inline-block;
-            background: linear-gradient(to right, #6c3483, #9b59b6);
+            background-color: #007bff;
             color: white !important;
-            padding: 18px 40px;
+            padding: 15px 35px;
             text-decoration: none;
-            border-radius: 50px;
-            font-weight: bold;
-            font-size: 1.15em;
+            border-radius: 5px;
             margin-top: 20px;
-            box-shadow: 0 4px 15px rgba(108, 52, 131, 0.3);
-            transition: 0.3s;
+            font-weight: bold;
+            font-family: Arial, sans-serif;
+            text-transform: uppercase;
+            transition: background-color 0.3s;
         }
         .btn:hover {
-            transform: scale(1.05);
-            background: linear-gradient(to right, #512662, #8e44ad);
+            background-color: #0056b3;
         }
         footer {
             text-align: center;
             padding: 40px;
             font-size: 0.9em;
-            color: #9b59b6;
+            color: #888;
         }
     </style>
 </head>
 <body>
 
 <header>
-    <h1 style="margin:0; font-size: 2.8em;">Loretta Milner</h1>
-    <p style="font-size: 1.2em; opacity: 0.9;">July 12, 1951 — 2026</p>
+    <h1>Loretta Milner</h1>
+    <div class="date-subtitle">July 12, 1951 — 2026</div>
+    <p style="margin-top: 10px;">A Life Devoted to Christ and Compassion</p>
 </header>
 
-<div class="profile-container">
-    <!-- Updated to match your exact lowercase filename and alt text -->
-    <img src="lorettaportrait2.png" 
-         alt="loretta_milner" 
-         class="profile-image" 
-         onerror="this.src='Screenshot_1-5-2026_8818_b1ggsx.github.io.jpeg'">
-</div>>
-
-    <div class="church-nurse-tag">
-        <span class="tag">St. Mary’s Hospital Nurse</span>
-        <span class="tag">Hills Chapel Baptist Member</span>
-        <span class="tag">Hospice Care Veteran</span>
+<div class="container">
+    
+    <div class="profile-container">
+        <!-- Updated to match lowercase filename and included fallback -->
+        <img src="lorettaportrait.png" 
+             alt="loretta_milner" 
+             class="profile-image" 
+             onerror="this.src='Screenshot_1-5-2026_8818_b1ggsx.github.io.jpeg'">
     </div>
 
-    <div class="gratitude-text">
-        "Thank you to everyone who has reached out—call, text, or visit. Please give us a little time to respond; nothing has gone unnoticed. I love y'all. The love has definitely been shown and is still showing."
-    </div>
+    <div class="content">
+        <p style="text-align: center; font-style: italic; color: #555; max-width: 700px; margin: 0 auto;">
+            "Thank you to everyone who have reached out via call, text, or visit. Please give us a little time to respond—nothing has gone unnoticed. I love y'all; the love has definitely been shown and is still showing."
+        </p>
 
-    <h2 class="section-title">A Lifetime of Service</h2>
-    <p>Loretta Milner lived a life that was a testament to God’s grace. For over 50 years, she was a woman of Christ whose life reflected humility and unconditional love. As a dedicated nurse at <strong>St. Mary’s Hospital</strong> and through her 15 years in hospice care, Loretta brought peace to the suffering and light to the darkness. Her work was not just a profession—it was her ministry to the community.</p>
-
-    <h2 class="section-title">Her Faith & Church</h2>
-    <p>A dedicated member of <strong>Hills Chapel Baptist Church</strong>, Loretta poured her spirit into her faith and her family. She was the anchor for her kin, always placing the needs of others before her own. Whether at the bedside of a patient or in the pews of her church, she gave endlessly and loved deeply.</p>
-
-    <div class="visitation-card">
-        <h3 style="margin-top:0; color: #6c3483;">Visitation & Support</h3>
-        <p>We will be accepting visitors starting at 5:00 PM daily until the funeral.</p>
-        <p style="font-weight: bold; color: #6c3483; font-size: 1.1em;">180 Mallard Dr, Athens, GA 30606</p>
-        <p>Food, water, and drinks are welcome at the home. Donations and flowers are also deeply appreciated.</p>
-    </div>
-
-    <div class="donation-section">
-        <h2 style="margin-top:0; color: #6c3483;">Honoring Her Legacy</h2>
-        <p>Loretta spent her entire life showing up for the community at St. Mary’s and Hills Chapel. We now ask for your help in providing the homegoing she deserves. Every gift goes toward her burial.</p>
+        <h2 class="section-title">A Life of Service</h2>
+        <p>For more than 50 years, Loretta Milner lived a life devoted to serving others[cite: 1]. She was a woman of Christ—one of God’s most genuine and faithful souls—whose life reflected compassion, grace, humility, and unconditional love[cite: 1].</p>
         
-        <a href="https://square.link/u/Kqa0LGSQ?src=sms" target="_blank" class="btn">Contribute to Loretta's Homegoing</a>
-        
-        <p style="margin-top: 25px; font-size: 0.85em; color: #888;">Secure Payment via Jackson-McWhorter Funeral Home</p>
+        <p>As a dedicated nurse, and throughout her 15 years as a hospice nurse, Loretta stood beside countless individuals and families during some of life’s hardest moments[cite: 1]. She brought comfort where there was pain, peace where there was fear, and light where there was darkness[cite: 1]. Her calling to care for others was not simply a profession—it was her ministry[cite: 1].</p>
     </div>
+
+    <div class="visitation-box">
+        <h3 style="margin-top: 0;">Visitation & Support</h3>
+        <p>We will be accepting visitors this evening starting at 5pm[cite: 1]. Visitation will remain open daily until the funeral, which will be arranged in the coming days[cite: 1].</p>
+        <p><strong>Address:</strong><br>
+        180 Mallard Dr<br>
+        Athens, GA 30606[cite: 1]</p>
+        <p>For those asking how they can help, we are accepting food, water, and drinks at the home[cite: 1]. We are also grateful for donations and flowers[cite: 1].</p>
+    </div>
+
+    <div class="poem-box">
+        <strong>A Pillar of Love</strong>
+
+        A life of faith, a heart of gold,
+        A story of service, beautifully told.
+        With a Bible in hand and a prayer on her breath,
+        She walked with a grace that was stronger than death.
+
+        But the heart of her world was the family she led,
+        By the love that she gave and the words that she said.
+        Whatever the struggle, whatever the need,
+        She was there for her kin in both spirit and deed.
+
+        Rest now, Loretta, your work here is done,
+        In the light of the Father, the victory is won.
+    </div>
+
+    <div class="donation-box">
+        <h2 style="margin-top: 0;">Showing Up for Loretta</h2>
+        <p>After a lifetime of her showing up for others, we ask that you help us show up for her now[cite: 1]. Any donation will go directly toward her burial[cite: 1].</p>
+        
+        <a href="https://square.link/u/Kqa0LGSQ?src=sms" target="_blank" class="btn">Donate to the Family of Loretta Milner</a>
+        
+        <p style="margin-top: 20px; font-size: 0.9em;">Thank you for all your love, prayers, and support during this time.</p>
+    </div>
+
 </div>
 
 <footer>
