@@ -16,15 +16,14 @@
         header {
             background-color: #5d5c58;
             color: white;
-            /* Increased top and bottom padding to clear the photo */
-            padding: 100px 20px 160px 20px; 
+            padding: 60px 20px;
             text-align: center;
         }
         .container {
             max-width: 850px;
-            /* Lowered the container further to prevent text overlap */
-            margin: -100px auto 40px; 
+            margin: 0 auto 40px;
             padding: 40px;
+            padding-top: 170px;
             background: white;
             box-shadow: 0 0 20px rgba(0,0,0,0.1);
             border-radius: 8px;
@@ -32,8 +31,9 @@
         }
         .profile-container {
             text-align: center;
-            margin-top: -210px; /* Aligns photo into the new header space */
-            margin-bottom: 30px;
+            margin-bottom: -130px;
+            position: relative;
+            z-index: 1;
         }
         .profile-image {
             width: 260px;
@@ -117,14 +117,13 @@
     <p style="margin-top: 15px; font-style: italic; opacity: 0.8;">A Life Devoted to Christ and Compassion</p>
 </header>
 
+<div class="profile-container">
+    <img src="lorettaportrait2.png" 
+         alt="loretta_milner" 
+         class="profile-image">
+</div>
+
 <div class="container">
-    
-    <div class="profile-container">
-        <img src="lorettaportrait2.png" 
-             alt="loretta_milner" 
-             class="profile-image" 
-             onerror="this.src='Screenshot_1-5-2026_8818_b1ggsx.github.io.jpeg'">
-    </div>
 
     <div class="content">
         <p style="text-align: center; font-style: italic; color: #555; max-width: 700px; margin: 0 auto 30px;">
