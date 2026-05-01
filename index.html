@@ -16,12 +16,14 @@
         header {
             background-color: #5d5c58;
             color: white;
-            padding: 80px 20px 140px 20px; /* Increased bottom padding to make room for photo */
+            /* Increased top and bottom padding to clear the photo */
+            padding: 100px 20px 160px 20px; 
             text-align: center;
         }
         .container {
             max-width: 850px;
-            margin: -80px auto 40px; /* Adjusted margin to sit properly behind the photo */
+            /* Lowered the container further to prevent text overlap */
+            margin: -100px auto 40px; 
             padding: 40px;
             background: white;
             box-shadow: 0 0 20px rgba(0,0,0,0.1);
@@ -30,8 +32,8 @@
         }
         .profile-container {
             text-align: center;
-            margin-top: -180px; /* Moves the photo up into the header area */
-            margin-bottom: 20px;
+            margin-top: -210px; /* Aligns photo into the new header space */
+            margin-bottom: 30px;
         }
         .profile-image {
             width: 260px;
@@ -46,8 +48,9 @@
             font-size: 1.2em;
             margin-top: 10px;
             opacity: 0.9;
+            font-weight: normal;
         }
-        h1 { font-size: 2.5em; margin-bottom: 5px; }
+        h1 { font-size: 2.8em; margin-bottom: 5px; margin-top: 0; }
         .section-title {
             color: #5d5c58;
             border-bottom: 2px solid #eee;
@@ -90,16 +93,14 @@
             color: white !important;
             padding: 15px 35px;
             text-decoration: none;
-            border-radius: 5px;
+            border-radius: 50px;
             margin-top: 20px;
             font-weight: bold;
             font-family: Arial, sans-serif;
             text-transform: uppercase;
-            transition: background-color 0.3s;
+            transition: 0.3s;
         }
-        .btn:hover {
-            background-color: #0056b3;
-        }
+        .btn:hover { background-color: #0056b3; transform: scale(1.05); }
         footer {
             text-align: center;
             padding: 40px;
@@ -113,13 +114,12 @@
 <header>
     <h1>Loretta Milner</h1>
     <div class="date-subtitle">July 12, 1951 — 2026</div>
-    <p style="margin-top: 10px;">A Life Devoted to Christ and Compassion</p>
+    <p style="margin-top: 15px; font-style: italic; opacity: 0.8;">A Life Devoted to Christ and Compassion</p>
 </header>
 
 <div class="container">
     
     <div class="profile-container">
-        <!-- Updated to match lowercase filename and included fallback -->
         <img src="lorettaportrait.png" 
              alt="loretta_milner" 
              class="profile-image" 
@@ -127,23 +127,23 @@
     </div>
 
     <div class="content">
-        <p style="text-align: center; font-style: italic; color: #555; max-width: 700px; margin: 0 auto;">
+        <p style="text-align: center; font-style: italic; color: #555; max-width: 700px; margin: 0 auto 30px;">
             "Thank you to everyone who have reached out via call, text, or visit. Please give us a little time to respond—nothing has gone unnoticed. I love y'all; the love has definitely been shown and is still showing."
         </p>
 
         <h2 class="section-title">A Life of Service</h2>
-        <p>For more than 50 years, Loretta Milner lived a life devoted to serving others[cite: 1]. She was a woman of Christ—one of God’s most genuine and faithful souls—whose life reflected compassion, grace, humility, and unconditional love[cite: 1].</p>
+        <p>For more than 50 years, Loretta Milner lived a life devoted to serving others. She was a woman of Christ—one of God’s most genuine and faithful souls—whose life reflected compassion, grace, humility, and unconditional love.</p>
         
-        <p>As a dedicated nurse, and throughout her 15 years as a hospice nurse, Loretta stood beside countless individuals and families during some of life’s hardest moments[cite: 1]. She brought comfort where there was pain, peace where there was fear, and light where there was darkness[cite: 1]. Her calling to care for others was not simply a profession—it was her ministry[cite: 1].</p>
+        <p>As a dedicated nurse, and throughout her 15 years as a hospice nurse, Loretta stood beside countless individuals and families during some of life’s hardest moments. She brought comfort where there was pain, peace where there was fear, and light where there was darkness. Her calling to care for others was not simply a profession—it was her ministry.</p>
     </div>
 
     <div class="visitation-box">
         <h3 style="margin-top: 0;">Visitation & Support</h3>
-        <p>We will be accepting visitors this evening starting at 5pm[cite: 1]. Visitation will remain open daily until the funeral, which will be arranged in the coming days[cite: 1].</p>
+        <p>We will be accepting visitors this evening starting at 5pm. Visitation will remain open daily until the funeral, which will be arranged in the coming days.</p>
         <p><strong>Address:</strong><br>
         180 Mallard Dr<br>
-        Athens, GA 30606[cite: 1]</p>
-        <p>For those asking how they can help, we are accepting food, water, and drinks at the home[cite: 1]. We are also grateful for donations and flowers[cite: 1].</p>
+        Athens, GA 30606</p>
+        <p>For those asking how they can help, we are accepting food, water, and drinks at the home. We are also grateful for donations and flowers.</p>
     </div>
 
     <div class="poem-box">
@@ -165,7 +165,7 @@
 
     <div class="donation-box">
         <h2 style="margin-top: 0;">Showing Up for Loretta</h2>
-        <p>After a lifetime of her showing up for others, we ask that you help us show up for her now[cite: 1]. Any donation will go directly toward her burial[cite: 1].</p>
+        <p>After a lifetime of her showing up for others, we ask that you help us show up for her now. Any donation will go directly toward her burial.</p>
         
         <a href="https://square.link/u/Kqa0LGSQ?src=sms" target="_blank" class="btn">Donate to the Family of Loretta Milner</a>
         
